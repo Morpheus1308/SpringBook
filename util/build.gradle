@@ -18,9 +18,8 @@ plugins {
 
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
 
-group = 'se.magnus.microservices.util'
+group = 'com.sieben.microservices.util'
 version = '1.0.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
