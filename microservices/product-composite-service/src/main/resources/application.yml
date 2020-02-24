@@ -1,9 +1,5 @@
 server.port: 7000
 
-logging:
-    level:
-        root: INFO
-        com.sieben.microservices: DEBUG
 
 app:
     product-service:
@@ -15,3 +11,8 @@ app:
     review-service:
         host: localhost
         port: 7003
+
+logging:
+    level:
+        root: INFO
+        com.sieben.microservices: DEBUG
