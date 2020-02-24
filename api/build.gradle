@@ -16,6 +16,9 @@ plugins {
 	id "io.spring.dependency-management" version "1.0.5.RELEASE"
 }
 
+dependencyManagement {
+	imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+}
 
 apply plugin: 'java'
 
@@ -34,6 +37,4 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
-dependencyManagement {
-    imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
-}
+
